@@ -14,7 +14,7 @@ fetchMyIP((error, ip) => {
   console.log("It worked! Returned IP:", ip);
 });
 
-fetchCoordsByIP("74.14.39.185", (error, coords) => {
+fetchCoordsByIP("10.22.100.000", (error, coords) => {
   if (error) {
     console.log("It didn't work!", error);
     return;
@@ -52,3 +52,5 @@ nextISSTimesForMyLocation((error, passTimes) => {
   // success, print out the deets!
   print(passTimes);
 });
+
+module.exports = { print };
